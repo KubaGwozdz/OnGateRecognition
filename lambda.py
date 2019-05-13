@@ -18,7 +18,7 @@ def detect_labels(bucket, key):
 
 def lambda_handler(event, context):
     target_ARN = 'YOUR_ARN'
-    bucket = "YOUR_BACKET"
+    bucket = "YOUR_BUCKET"
     key = urllib.unquote_plus(event['Records'][0]['s3']['object']['key'].encode('utf8'))
     
     correct_number_plate = "YOUR_PLATE"
